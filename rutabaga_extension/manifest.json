@@ -1,6 +1,14 @@
 {
-  "name": "Getting Started Example",
+  "name": "Rutabaga Extension",
   "version": "1.0",
-  "description": "Build an Extension!",
+  "description": "La première extension qui t'aide à protéger la planète",
+  "permissions": ["storage"],
+  "chrome_url_overrides" : {
+      "newtab": "override_page.html"
+    },
+  "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
   "manifest_version": 2
 }
